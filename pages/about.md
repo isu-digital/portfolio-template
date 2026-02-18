@@ -1,7 +1,8 @@
 ---
 title: About This Template
 nav: About
-nav_order: 2
+layout: profile-page
+nav_order: 3
 ---
 
 [bootstrap5-template](https://github.com/thecdil/bootstrap5-template) is a basic template repository to create a [Bootstrap 5](https://getbootstrap.com/) site using Jekyll on GitHub Pages (or where every you want to host it). 

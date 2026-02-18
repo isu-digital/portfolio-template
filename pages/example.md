@@ -1,6 +1,7 @@
 ---
 title: Example Page
 nav: Example
+layout: profile-page
 nav_order: 1
 ---
 
