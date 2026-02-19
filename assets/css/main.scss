@@ -1,13 +1,34 @@
 ---
 # base CSS to add custom theming to the template
 ---
+@charset "utf-8";
 
-/* use the variables here to tweak the base template theme. Comment out options that you do not want to use. */
-  
-// Tweak body text and link color
-$text-color: #111;
-//$link-color: #0d6efd;
-$base-font-size: 1.1rem;
+/* base variables pulled from theme.yml */
+$theme-base-font-family: {{ site.data.theme.base-font-family | default: '""' }};
+$theme-base-font-size: {{ site.data.theme.base-font-size | default: '""' }};
+$theme-text-color: {{ site.data.theme.text-color | default: '""' }};
+$theme-link-color: {{ site.data.theme.link-color | default: '""' }};
+
+/* base variables for template */
+$base-font-family: $theme-base-font-family;
+$base-font-size: $theme-base-font-size;
+$text-color: $theme-text-color;
+$link-color: $theme-link-color;
+
+/* theme colors pulled from config-theme-colors */
+{% assign btns = site.data.config-theme-colors | where_exp: "item","item.color != nil" %}
+{% if btns != empty %}
+@use "sass:map";
+@use "theme-colors" with (
+  $link-color-base: $theme-link-color,
+  $theme-colors: (
+    {% for btn in btns %}{% assign color = btn.color | strip %}{% if color != empty %}
+    "{{ btn.color_class | slugify }}": {{ color }}{% unless forloop.last %},{% endunless %}
+    {% endif %}{% endfor %}
+  )
+);
+{% endif %}
+
 
 // page narrow size
 $container-narrow: 750px;

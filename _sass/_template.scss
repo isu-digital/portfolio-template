@@ -12,15 +12,15 @@ html {
 
 /* change default text colors */
 body {
-    @if variable-exists(base-font-family) { font-family: $base-font-family; }
-    @if variable-exists(base-font-size) { font-size: $base-font-size; }
-    @if variable-exists(text-color) { color: $text-color; }
-    @if variable-exists(code-font-family) { code { font-family: $code-font-family; } }
+    @if variable-exists(base-font-family) and $base-font-family != "" { font-family: $base-font-family; }
+    @if variable-exists(base-font-size) and $base-font-size != "" { font-size: $base-font-size; }
+    @if variable-exists(text-color) and $text-color != "" { color: $text-color; }
+    @if variable-exists(code-font-family) and $code-font-family != "" { code { font-family: $code-font-family; } }
 }
-@if variable-exists(link-color) {
+@if variable-exists(link-color) and $link-color != "" {
     a {
         color: $link-color;
-        @if variable-exists(text-color) {
+        @if variable-exists(text-color) and $text-color != "" {
             &:hover {
                 color: $text-color; 
             }
@@ -117,4 +117,19 @@ a { text-decoration: none; }
     width: 1em;
     height: 1em;
     vertical-align: -0.1em;
+}
+
+/* */
+
+/* set up base variable to override from cb.scss */
+$base-font-family: "" !default;
+$base-font-size: "" !default;
+$text-color: "" !default;
+$link-color: "" !default;
+
+/* set font base set in theme.yml */
+body {
+    @if $base-font-family != "" { font-family: $base-font-family; }
+    @if $base-font-size != "" { font-size: $base-font-size; }
+    @if $text-color != "" { color: $text-color; }
 }
