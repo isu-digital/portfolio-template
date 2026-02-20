@@ -127,7 +127,7 @@ $base-font-size: "" !default;
 $text-color: "" !default;
 $link-color: "" !default;
 
-/* set font base set in theme.yml */
+/* set font base set in _config.yml */
 body {
     @if $base-font-family != "" { font-family: $base-font-family; }
     @if $base-font-size != "" { font-size: $base-font-size; }
