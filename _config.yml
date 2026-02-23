@@ -13,6 +13,12 @@ title: Academic Portfolio Template
 description: "a basic personal or professional portfolio template for Jekyll with GitHub Pages"
 year: 2025
 author: ISU Cyclone 
+# personal urls
+bio: 
+email: 
+github: 
+school: 
+orcid: 
 #organization-name: 
 # add search box to navbar, true/false
 search: false
