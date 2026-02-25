@@ -1,5 +1,5 @@
 ---
 title: Academic Portfolio Template
-layout: profile-page
+layout: profile-page-left
 ---
 

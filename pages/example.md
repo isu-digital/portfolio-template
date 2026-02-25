@@ -1,7 +1,7 @@
 ---
 title: Example Page
 nav: Example
-layout: profile-page
+layout: profile-page-left
 nav_order: 1
 ---
 

@@ -1,19 +1,18 @@
 ---
 title: About This Template
 nav: About
-layout: profile-page
+layout: profile-page-left
 nav_order: 3
 ---
 
-[bootstrap5-template](https://github.com/thecdil/bootstrap5-template) is a basic template repository to create a [Bootstrap 5](https://getbootstrap.com/) site using Jekyll on GitHub Pages (or where every you want to host it). 
-The layout is based on the [Bootstrap starter template example](https://getbootstrap.com/docs/5.1/examples/) with a navbar, search box (using lunr.js), and sticky footer.
-It is intended as a quick starting point for creating new web projects.
+[portfolio-template](https://github.com/isu-digital/portfolio-template) is a basic template repository to create an academic or professional portfolio website using [Bootstrap 5](https://getbootstrap.com/) and Jekyll on GitHub Pages. 
+The layout is based on the [bootstrap-template](https://github.com/thecdil/bootstrap5-template).
 
-The basic steps for using bootstrap-template are: 
+The basic steps for using portfolio-template are: 
 
 1. create repository from the template
 2. edit _config.yml
-3. edit content pages
+3. edit content pages and add blog posts
 4. use customization options
 
 See [docs/create-website.md](https://github.com/thecdil/bootstrap5-template/blob/main/docs/create-website.md) for details!
