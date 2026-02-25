@@ -1,5 +1,4 @@
 ---
-layout: profile-page-left
 title: Blog
 nav: Blog
 nav_order: 2

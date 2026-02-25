@@ -1,7 +1,6 @@
 ---
 title: About This Template
 nav: About
-layout: profile-page-left
 nav_order: 3
 ---
 

@@ -79,12 +79,19 @@ font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/c
 #
 # Defaults to simplify front matter,
 # all files in the "pages" folder will be output at root of site
-#defaults:
-#  - scope:
-#      path: "pages"
-#    values:
-#      layout: page
-#      permalink: /:basename:output_ext
+defaults:
+# pages directory
+- scope:
+    path: "pages"
+  values:
+    layout: profile-page-right
+    permalink: /:basename:output_ext
+# index.md
+- scope:
+    path: ""
+    type: pages
+  values:
+    layout: profile-page-right
 
 # Blog Settings
 show_excerpts: true
