@@ -14,11 +14,13 @@ description: "a basic personal or professional portfolio template for Jekyll wit
 year: 2025
 author: ISU Cyclone 
 # personal urls
+image: /assets/img/emoji-cool.png
 bio: 
 email: 
 github: 
 school: 
 orcid: 
+cv: 
 #organization-name: 
 # add search box to navbar, true/false
 search: false
@@ -83,6 +85,9 @@ font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/c
 #    values:
 #      layout: page
 #      permalink: /:basename:output_ext
+
+# Blog Settings
 show_excerpts: true
+
 # ignore stuff
 exclude: [docs/, Rakefile, README.md, LICENSE]
