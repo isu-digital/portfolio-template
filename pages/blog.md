@@ -1,7 +1,7 @@
 ---
 title: Blog
 nav: Blog
-nav_order: 2
+nav_order: 4
 ---
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
