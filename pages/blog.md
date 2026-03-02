@@ -25,7 +25,7 @@ nav_order: 4
             </a>
           </h3>
           {% if post.image %}
-          <img src="{{ '/assets/' | append: post.image | relative_url }}" class="blog-roll-image"> 
+          <img src="{{ '/assets/img/' | append: post.image | relative_url }}" class="blog-roll-image"> 
           {% endif %}
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
