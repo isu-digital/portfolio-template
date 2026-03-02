@@ -11,16 +11,16 @@
 #
 title: Academic Portfolio Template
 description: "a basic personal or professional portfolio template for Jekyll with GitHub Pages"
-year: 2025
-author: ISU Cyclone 
+year: 2026
+author: ISU Cyclone
+bio:
 # personal urls
 image: /assets/img/emoji-cool.png
-bio: 
-email: 
-github: 
-school: 
-orcid: 
-cv: 
+email:
+github:
+department:
+orcid:
+cv:
 #organization-name: 
 # add search box to navbar, true/false
 search: false
@@ -53,7 +53,6 @@ source-code: https://github.com/isu-digital/portfolio-template
 ##########
 # STYLE OPTIONS
 #
-
 # NAVBAR COLORS [optional!]
 # navbar text color
 # Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
@@ -74,6 +73,10 @@ link-color: "#0d6efd"
 base-font-family: # comment out for bootstrap defaults. e.g. Roboto
 font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
+# ICONS [optional!]
+# Generates icons for sidebar information from https://fontawesome.com/
+fontawesome: true
+
 #######
 # BUILD SETTINGS [usually leave as is]
 #
@@ -84,16 +87,19 @@ defaults:
 - scope:
     path: "pages"
   values:
-    layout: profile-page-left
+    layout: profile-page-right
     permalink: /:basename:output_ext
 # index.md
 - scope:
     path: ""
     type: pages
   values:
-    layout: profile-page-left
+    layout: profile-page-right
 
-# Blog Settings
+##########
+# BLOG SETTINGS
+#
+# BLOG EXCERPTS
 show_excerpts: true
 
 # ignore stuff
