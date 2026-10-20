@@ -56,3 +56,5 @@ Horizontal rule:
 {% include alert.html text="This is an example alert!" color="success" align="center" %}
 
 {% include jumbotron.html heading="Upcoming Lecture" button-text="Register Here" button-link="https://digital.lib.iastate.edu" bg="light" text-color="light" %}
+
+{% include blog-reel.html %}
